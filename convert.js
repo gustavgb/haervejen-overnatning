@@ -12,7 +12,7 @@ const places = fs
       lat: loc[0].trim(),
       lon: loc[1].trim(),
       name: parts[1].trim(),
-      desc: parts[2].trim().replace(/\\n/, '\n')
+      desc: parts[2].trim().replace(/\\n/g, '\n')
     }
   })
   .map(
